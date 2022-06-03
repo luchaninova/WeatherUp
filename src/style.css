@@ -1,0 +1,36 @@
+h1 {
+  margin-top: 50px;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+.chose-city,
+.search-bar {
+  margin: 20px 0;
+}
+
+.fa-solid {
+  color: #0d6efd94;
+  font-size: 24px;
+}
+.wether-forcast {
+  margin-top: 70px;
+}
+
+.current-city-details-icon {
+  font-size: 64px;
+  margin-right: 10px;
+}
+
+.current-city-details-temperature {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.current-city-details-units {
+  position: relative;
+  top: -34px;
+}

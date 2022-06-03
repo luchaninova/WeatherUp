@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/e9f39105b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="chose-city">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">London</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Paris</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Berlin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">New York</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="search-bar">
+        <div class="row">
+          <div class="col-10">
+            <form class="search-bar-form" id="search-city-form">
+              <div class="row">
+                <div class="col-10">
+                  <input
+                    type="texHt"
+                    class="form-control"
+                    placeholder="Enter city"
+                    id="search-city-form-value"
+                  />
+                </div>
+                <div class="col-2">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-2">
+            <button
+              type="button"
+              class="btn btn-success"
+              id="current-location-button"
+            >
+              Current location
+            </button>
+          </div>
+        </div>
+      </div>
+      <h1></h1>
+      <div class="current-city">
+        <div class="row">
+          <div class="col-4">
+            <p class="current-city-details">
+              <span id="current-city-details-time"> Friday 16:29 </span>
+              <br />
+              <span id="current-city-details-weather"></span>
+            </p>
+          </div>
+          <div class="col-4">
+            <p class="current-city-details">
+              <i class="fa-solid fa-cloud-sun current-city-details-icon"></i>
+              <span
+                class="current-city-details-temperature"
+                id="current-city-details-temperature"
+              ></span>
+              <span class="current-city-details-units">
+                <a href="#" id="current-city-details-celsius-link">°C</a> |
+                <a href="#" id="current-city-details-fahrenheit-link">°F</a>
+              </span>
+            </p>
+          </div>
+          <div class="col-4">
+            <p class="current-city-details">
+              Humidity: <span id="current-city-details-humidity"></span>%
+              <br />
+              Wind: <span id="current-city-details-wind-speed"></span>km/h
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wether-forcast">
+        <div class="row">
+          <div class="col">
+            <p class="wether-forcast-day">
+              Sat
+              <br />
+              <i class="fa-solid fa-cloud"></i>
+              <br />
+              18°C
+            </p>
+          </div>
+          <div class="col">
+            <p class="wether-forcast-day">
+              Sat
+              <br />
+              <i class="fa-solid fa-cloud"></i>
+              <br />
+              18°C
+            </p>
+          </div>
+          <div class="col">
+            <p class="wether-forcast-day">
+              Sat
+              <br />
+              <i class="fa-solid fa-cloud"></i>
+              <br />
+              18°C
+            </p>
+          </div>
+          <div class="col">
+            <p class="wether-forcast-day">
+              Sat
+              <br />
+              <i class="fa-solid fa-cloud"></i>
+              <br />
+              18°C
+            </p>
+          </div>
+          <div class="col">
+            <p class="wether-forcast-day">
+              Sat
+              <br />
+              <i class="fa-solid fa-cloud"></i>
+              <br />
+              18°C
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
